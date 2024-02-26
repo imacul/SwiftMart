@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import  Image from "next/image";
 import Cart from "@/components/cart";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useStateContext } from '@/context/StateContext';
@@ -11,7 +12,12 @@ const Navbar = () => {
     <div className="navbar-container">
       <p>
         <Link href="/" className="logo">
-          <img src="../Logo.png" className="logo_image" />
+          <Image 
+          src="/Logo.png"
+           className="logo_image"
+           width={30}
+           height={30}
+            />
           SwiftMart
         </Link>
       </p>

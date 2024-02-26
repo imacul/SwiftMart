@@ -14,7 +14,7 @@ import { Toast } from "react-hot-toast";
 import { useStateContext } from "@/context/StateContext";
 import { urlFor } from "@/lib/client";
 
-const cart = () => {
+const Cart = () => {
   const cartRef = useRef();
   const {
     totalQuantities,
@@ -61,6 +61,7 @@ const cart = () => {
                 <img
                   src={urlFor(item?.image[0])}
                   className="cart-product-image"
+                  alt="cart product image"
                 />
                 <div className="item-desc">
                   <div className="flex top">
@@ -119,4 +120,4 @@ const cart = () => {
   );
 };
 
-export default cart;
+export default Cart;
